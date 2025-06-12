@@ -8,7 +8,7 @@ import FormData from 'form-data';
 
 // --- NFT Smart Contract Details ---
 // TODO: Replace with your deployed contract address
-const CONTRACT_ADDRESS = "0x45804FA4dDfBC8D6BB5aeABB3EE5765740661e8a"; 
+const CONTRACT_ADDRESS = "0xef560691c547B5E210c768C4C8BEB2040018B7cC"; 
 
 // ABI for the safeMint function from your ImageNFT contract
 const CONTRACT_ABI =[
