@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { avalancheFuji } from "viem/chains";
+import { sepolia } from "viem/chains";
 import { createMetadata, Metadata, ValidatedMetadata, ExecutionResponse } from "@sherrylinks/sdk";
 import { serialize } from 'wagmi';
 import { encodeFunctionData } from "viem";
@@ -732,13 +732,13 @@ export async function POST(req: NextRequest) {
 					to: CONTRACT_ADDRESS,
 					data: callData,
 					value: BigInt(0),
-					chainId: avalancheFuji.id,
+					chainId: sepolia.id,
 			};
 
 			const serialized = serialize(tx);
 			const resp: ExecutionResponse = {
 					serializedTransaction: serialized,
-					chainId: avalancheFuji.name,
+					chainId: sepolia.name,
 			};
 
 			return NextResponse.json(resp, { status: 200, headers: { "Access-Control-Allow-Origin": "*" }});
