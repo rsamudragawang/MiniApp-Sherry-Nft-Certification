@@ -666,6 +666,7 @@ export async function GET(req: NextRequest) {
 	}
 }
 export async function POST(req: NextRequest) {
+	console.log(req)
 	try {
 			if (!PINATA_API_KEY || !PINATA_API_SECRET) {
 					throw new Error("Pinata API keys are not configured in environment variables.");
