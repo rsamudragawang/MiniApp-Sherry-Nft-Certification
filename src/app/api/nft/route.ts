@@ -673,9 +673,12 @@ export async function POST(req: NextRequest) {
 			}
 			
 			// 1. Handle JSON input
-			const body = await req.json();
-			const { recipient, name } = body;
+			// const body = await req.json();
+			// const { recipient, name } = body;
 
+			const { searchParams } = new URL(req.url);
+			const recipient = searchParams.get("recipient");
+			const name = searchParams.get('name')
 			if (!recipient || !name) {
 					return NextResponse.json({ error: "Missing 'recipient' or 'name' in request body." }, { status: 400 });
 			}
