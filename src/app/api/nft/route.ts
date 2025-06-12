@@ -648,8 +648,8 @@ export async function GET(req: NextRequest) {
 									type: "dynamic",
 									label: "Generate Certificate",
 									description: "Create and mint a personalized NFT certificate.",
-									chains: { source: "fuji" },
-									path: `/api/example`, // Your API route path
+									chains: { source: "sepolia" },
+									path: `/api/nft`, // Your API route path
 									params: [
 											{ name: "recipient", label: "Recipient Address", type: "text", required: true, description: "The wallet address that will receive the certificate." },
 											{ name: "name", label: "Recipient's Name", type: "text", required: true, description: "The name to be printed on the certificate." },
