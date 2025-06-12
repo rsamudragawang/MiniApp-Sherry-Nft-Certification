@@ -638,8 +638,8 @@ export async function GET(req: NextRequest) {
 
 			// Metadata now only asks for the recipient's name
 			const metadata: Metadata = {
-					url: "https://sherry.social", // Your project's URL
-					icon: "https://avatars.githubusercontent.com/u/117962315", // Your project's icon
+					url: "https://mini-app-sherry-nft-certification.vercel.app/api/nft", // Your project's URL
+					icon: "https://gateway.pinata.cloud/ipfs/Qmeo5bdUZCPDixiHvETy4MKVFakrpfE5HoHgmzBbsozBMX", // Your project's icon
 					title: "NFT Certificate Generator",
 					baseUrl: serverUrl,
 					description: "Enter a name to generate a unique, on-chain NFT certificate.",
